@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" name="frm">
+        <input type="text" name="id">
+        <input type="password" name="pw">
+    </form>
+    <form action ="">
+        <label for="apple"><input type="checkbox" value="apple">사과</label>
+        <label for="banana"><input type="checkbox" value="banana">바나나</label>
+        <label for="orange"><input type="checkbox" value="orange">오렌지</label>
+        <label for="melon"><input type="checkbox" value="melon">멜론</label>
+        <label for="honeydew"><input type="checkbox" value="honeydew">허니듀</label>
+    </form>
+    <script>
+        // document.frm.id.value = "정벼리"
+        // document.frm.pw.value = "11053445"
+        const ckEls = document.querySelectorAll("[type='checkbox']");
+        for(let i =0; i < ckEls.length; i++) {
+            if(ckEls[i].value ==="orange") 
+                ckEls[i].checked = true;     
+        }
+
+
+    </script>
+    
+    
+    <!-- <script>
+        const aEl = document.createElement("a"); // 생성
+        document.body.appendChild(aEl); // 도큐먼트의 바디 태그 안에 추가 & 연결
+        aEl.setAttribute("href","http://naver.com");
+        aEl.innerHTML = "네이버 등록"
+    </script> -->
+</body>
+</html>

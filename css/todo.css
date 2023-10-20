@@ -1,0 +1,71 @@
+*{
+    box-sizing:border-box;
+    border-color: black;
+    white-space: nowrap;
+  }
+  #container {  
+    width:50%;
+    
+    margin:80px auto;
+    padding: 0;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 1%;
+    padding-left: 1%;
+  }
+
+  p , h1 , .frm {
+    width: 100%; 
+    text-align: left; 
+    line-height: 1.5; 
+    height: auto;
+    margin: 0;
+    padding: 1px 2px; 
+  }
+
+  #subject {
+    width: 90%;
+    
+  }
+
+  input,
+  button {
+    vertical-align: text-top;
+    height: 24px;
+    
+  }
+
+  button {
+    color:#fff;
+  }
+
+  #itemList { 
+    display: flex;
+    justify-content: space-around;
+    list-style:none; 
+    
+  }
+  li { 
+    line-height: 2.5; 
+  }
+  li:hover { 
+    cursor:pointer;
+  }
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+

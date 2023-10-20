@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type ="text" id="input-box" 
+        onfocus="focusEvent()" onblur="blurEvent()">
+    <button onclick="clickEvent()">클릭</button>
+    <script>
+        function focusEvent(){
+            let inputBox = document.querySelector("#input-box");
+            inputBox.style.background = "orange";
+        }
+        function blurEvent(){
+            let inputBox = document.querySelector("#input-box");
+            inputBox.style.background = "green";
+        }
+
+        // 프로퍼티 리스너 방식으로 이벤트 등록하기
+        const btnEl1 = document.querySelector("button");
+        btnEl1.onclick = () => {
+            alert("arrow click");
+        }
+
+        // 이벤트 등록 메서드로 이벤트 등록하기
+        const btnEl2 = document.querySelector("button");
+        btnEl2.addEventListener("click", function() {
+            alert("button Click");
+        });
+    </script>    
+</body>
+</html>
